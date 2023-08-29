@@ -123,7 +123,7 @@ in the meanwhile enjoy these :
 ![Ken](images/DebugKen.png)
 
 
-![Kachow](images/Kachow.png)
+![Kachow](images/Kachow.jpeg)
 
 
 
