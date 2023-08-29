@@ -42,11 +42,9 @@ In PyCharm, click on the line number to set a breakpoint. Similar to VSCode, a r
 ![BreakPoint](images/PyCharmBreakpoint.png)
 
 
-
 Breakpoints are enabled only during debug mode.
 
 Here is an example of where a breakpoint has been hit during debugging for project 1.
-
 
 The blue line highlights the current line of execution. 
 ![BreakPoint](images/BreakPointHitPyCharm.png)
