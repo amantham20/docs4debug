@@ -9,6 +9,7 @@ The simplicity of printing variable values or messages to check program flow mak
 However, print debugging has its downsides. It can clutter up the code with lots of print statements that you'll later have to clean up. And it doesn't work well for tracing deeper logical issues. Excessive printing can also slow down the program. After all the course is about being computationally efficient.
 
 Here is some of my code from Freshman year. 😳
+(not a good practice)
 
 ![PrintDebug](images/PrintDebug.png)
 
@@ -23,7 +24,9 @@ Many IDEs like Visual Studio, and PyCharm have excellent debugging support. It's
 * Stepping over, into, or out of functions as you walk through code
 * Viewing the call stack to understand the execution path
 
-It may feel daunting at first if you've never used a debugger. But once you get the hang of it, you'll have way more visibility into your code and can zero in on problems much faster than with print statements alone. The investment of time pays off greatly in the long run.
+![Debugger](images/LabeledDebugger.jpeg)
+
+It may feel daunting at first if you've never used a debugger. But once you get the hang of it, you'll have way more visibility into your code and can zero in on problems much faster than with print statements alone. 
 
 
 ### Working with breakpoints
@@ -34,9 +37,11 @@ In VSCode, you can set a breakpoint by clicking on the editor margin to the left
 
 ![BreakPoint](images/VsCodeBreakpoint.png)
 
-In PyCharm, click on the line number to set a breakpoint.
+In PyCharm, click on the line number to set a breakpoint. Similar to VSCode, a red dot will appear indicating the breakpoint.
 
 ![BreakPoint](images/PyCharmBreakpoint.png)
+
+
 
 Breakpoints are enabled only during debug mode.
 
@@ -46,7 +51,8 @@ Here is an example of where a breakpoint has been hit during debugging for proje
 The blue line highlights the current line of execution. 
 ![BreakPoint](images/BreakPointHitPyCharm.png)
 
-In the lower right, we can inspect the variables in the current scope at the breakpoint. For advanced classes and Data Structures the can be peeked in. [Color] Region
+
+In the lower right, we can inspect the variables in the current scope at the breakpoint. For advanced classes and Data Structures the can be peeked in.
 
 Key tips for inspecting variables:
 
@@ -103,7 +109,7 @@ Here is an example of an error with peeking of other variables
 
 
 ---
-Debugging is a crucial programming skill that takes time and a lot of patience to master. But with practice, you'll be able to track down bugs faster and write more robust code.
+Debugging is a crucial programming skill that takes time and a lot of patience to master. But with practice, you'll be able to track down bugs faster and write more robust code. The investment of time pays off greatly in the long run.
 
 
 Happy ~~Coding!~~ Debugging!
