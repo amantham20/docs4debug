@@ -19,14 +19,12 @@ While print statements have their place, to take your debugging skills to the ne
 Many IDEs like Visual Studio, and PyCharm have excellent debugging support. It's just a matter of learning the basics:
 
 * Setting breakpoints to pause execution at certain lines
+* Inspecting variables to check their values
 * Stepping over, into, or out of functions as you walk through code
 * Viewing the call stack to understand the execution path
-* Inspecting variables to check their values
-* Watching expressions to track changes or issues
 
 It may feel daunting at first if you've never used a debugger. But once you get the hang of it, you'll have way more visibility into your code and can zero in on problems much faster than with print statements alone. The investment of time pays off greatly in the long run.
 
-So don't be afraid to graduate from print debugging and unlock the full potential of your IDE's debugger. Often one can combine it with judiciously placed prints and you'll have a killer debugging duo.
 
 ### Working with breakpoints
 
@@ -36,7 +34,7 @@ In VSCode, you can set a breakpoint by clicking on the editor margin to the left
 
 ![BreakPoint](images/VsCodeBreakpoint.png)
 
-In PyCharm, click on the gutter to the left of the line number to set a breakpoint.
+In PyCharm, click on the line number to set a breakpoint.
 
 ![BreakPoint](images/PyCharmBreakpoint.png)
 
@@ -48,7 +46,7 @@ Here is an example of where a breakpoint has been hit during debugging for proje
 The blue line highlights the current line of execution. 
 ![BreakPoint](images/BreakPointHitPyCharm.png)
 
-In the lower right, we can inspect the variables in the current scope at the breakpoint. [Color] Region
+In the lower right, we can inspect the variables in the current scope at the breakpoint. For advanced classes and Data Structures the can be peeked in. [Color] Region
 
 Key tips for inspecting variables:
 
@@ -61,13 +59,13 @@ Both VSCode and PyCharm provide a handy hover inspection feature that lets you v
 
 Simply hover over any variable when paused on a breakpoint to see a popup with the current value.
 
-<!-- Image for Hovering inspection -->
+![Hover](images/HoverInspection.png)
 
 
 ### Navigating Debugged Code
 Once execution is paused on a breakpoint, you have several options to step through code and analyze the flow:
 
-<!-- Image for steps -->
+![Navigation](images/LabeledNavigation.jpeg)
 
 * Resume - Resumes full execution until the next breakpoint. Useful to fast forward past uninteresting sections.
 * Step Over - Steps to the next line, but does not enter any functions called on that line. Steps over code without digging into it.
@@ -79,29 +77,49 @@ Once execution is paused on a breakpoint, you have several options to step throu
 ### Leveraging the Stack Trace
 Another useful debugging tool provided by IDEs' like VSCode and PyCharm is the stack trace. This gives you visibility into the sequence of function calls that led to the current execution point. Very Very useful for functional programming and recursion.
 
-<!-- Recursion Example -->
+![Stack Trace](images/StackTrace.png)
 
 When paused in the debugger, the stack trace shows the chain of functions calls in order from the top-level caller down to the current line of execution. This helps reconstruct how the code reached its current state. functions in the stack can also be selected and paired with peeking you can see when happened before the code jump.
 
 
 ### Oops my test cases failed during debugging (user uncaught exceptions).
-This was my personal favorite trick to debug. #LiveSaver. ❤️
+This was my personal favorite trick to debug with.
 
-Sometimes your code will fail as we have set asserts in our test cases to ensure proper. It might be hard to point what went wrong during the execution. Enabling "user uncaught exceptions" in debug mode will save the day! When turned on, your code will pause execution right before an unhandled exception occurs, rather than crashing. This allows you to inspect the program state and variables leading up to the exception, making it much easier to identify the source of the problem.
+Sometimes your code will fail as we have set asserts in our test cases to enurse that projects are properly coded to base and edge cases. It might be hard to point what went wrong during the execution. Enabling "user uncaught exceptions" in debug mode will save the day! When turned on, your code will pause execution right before an unhandled exception occurs, rather than crashing. This allows you to inspect the program state and variables leading up to the exception, making it much easier to identify the source of the problem.
 
 
-Debugging is a crucial programming skill that takes time and a lot of patience to master. In my opinion, code that compiles on the first try is indistinguishable from magic. But by learning how to use the tools at your disposal you can spend time whining about other classes.
+Here is how you can enable it in VSCode and PyCharm:
+
+
+For vscode it is a enabled by checking the box in the debug tab called `user uncaught exception`.
+![Uncaught](images/vscodeUncaughtExceptions.png)
+
+For PyCharm use `shift + ctrl/⌘ + F8` and set the permission to the following settings.
+![Uncaught](images/BreakpointAnyExceptionSettings.png)
+
+
+Here is an example of an error with peeking of other variables
+![ExampleUncaught](images/uncaughtException.png)
+
+
+---
+Debugging is a crucial programming skill that takes time and a lot of patience to master. But with practice, you'll be able to track down bugs faster and write more robust code.
 
 
 Happy ~~Coding!~~ Debugging!
 
 Aman Dhruva Thamminana & CSE 331 Team
 
+---
 
-in the meantime
+
+
+in the meanwhile enjoy these :
 
 ![Ken](images/DebugKen.png)
 
+
+![Kachow](images/Kachow.png)
 
 
 
