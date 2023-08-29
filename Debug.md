@@ -120,10 +120,11 @@ Aman Dhruva Thamminana & CSE 331 Team
 
 in the meanwhile enjoy these :
 
-![Ken](images/DebugKen.png)
 
+<img src="images/DebugKen.png" alt="kachow" width="400"/>
 
-![Kachow](images/Kachow.jpeg)
+<img src="images/Kachow.jpeg" alt="kachow" width="400"/>
+
 
 
 
