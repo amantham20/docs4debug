@@ -48,7 +48,7 @@ Here is an example of where a breakpoint has been hit during debugging for proje
 The blue line highlights the current line of execution. 
 ![BreakPoint](images/BreakPointHitPyCharm.png)
 
-In the lower right we can inspect the variables in the current scope at the breakpoint. [Color] Region
+In the lower right, we can inspect the variables in the current scope at the breakpoint. [Color] Region
 
 Key tips for inspecting variables:
 
@@ -75,28 +75,22 @@ Once execution is paused on a breakpoint, you have several options to step throu
 * Step Out - Runs the rest of the current function and stops at the line after the function call. Great for stepping out of code you don't need to debug.
 
 
-<!-- Some tips for efficient debugging navigation:
-
-* Step over setup code to get to the meat of the logic.
-* Step into functions that contain bugs or complex code.
-* Use step out to surface back out of details you've debugged. -->
-
 
 ### Leveraging the Stack Trace
-Another useful debugging tool provided by IDEs' like VSCode and PyCharm is the stack trace. This gives you visibility into the sequence of function calls that led to the current execution point. Verry Very useful for functional programming and recursion.
+Another useful debugging tool provided by IDEs' like VSCode and PyCharm is the stack trace. This gives you visibility into the sequence of function calls that led to the current execution point. Very Very useful for functional programming and recursion.
 
 <!-- Recursion Example -->
 
-When paused in the debugger, the stack trace shows the chain of functions calls in order from the top level caller down to the current line of execution. This helps reconstruct how the code reached its current state.
+When paused in the debugger, the stack trace shows the chain of functions calls in order from the top-level caller down to the current line of execution. This helps reconstruct how the code reached its current state. functions in the stack can also be selected and paired with peeking you can see when happened before the code jump.
 
 
-### oops my testcases fail debuging (user uncaught exceptions).
-This was my personal favorite trick to debug. #LiveSaver.
+### Oops my test cases failed during debugging (user uncaught exceptions).
+This was my personal favorite trick to debug. #LiveSaver. ❤️
 
-Sometimes your code will fail as we have set asserts in our test cases to ensure proper. It might be hard to point what went wrong during the exection. Enabling "user uncaught exceptions" in debug mode will save the day! When turned on, your code will pause execution right before an unhandled exception occurs, rather than crashing. This allows you to inspect the program state and variables leading up to the exception, making it much easier to identify the source of the problem.
+Sometimes your code will fail as we have set asserts in our test cases to ensure proper. It might be hard to point what went wrong during the execution. Enabling "user uncaught exceptions" in debug mode will save the day! When turned on, your code will pause execution right before an unhandled exception occurs, rather than crashing. This allows you to inspect the program state and variables leading up to the exception, making it much easier to identify the source of the problem.
 
 
-Debugging is a crucial programming skill that takes time and a lot of patience to master. n my opinion code that compiles on the first try is indistinguibel from magic. But by learing how to use tools at your disposal you can spend time wining about other classes.
+Debugging is a crucial programming skill that takes time and a lot of patience to master. In my opinion, code that compiles on the first try is indistinguishable from magic. But by learning how to use the tools at your disposal you can spend time whining about other classes.
 
 
 Happy ~~Coding!~~ Debugging!
