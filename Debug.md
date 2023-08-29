@@ -6,9 +6,9 @@ We've all been there - trying to track down a bug in our code and resorting to a
 
 The simplicity of printing variable values or messages to check program flow makes print debugging an easy first step when issues arise. Just add a few print statements, run the code, and check the output to gain insight into what's happening under the hood. It doesn't require any fancy tools or setup.
 
-However, print debugging has its downsides. It can clutter up the code with lots of print statements that you'll later have to clean up. And it doesn't work well for tracing deeper logical issues. Excessive printing can also slow down the program. After all the couse is about being computationaly efficient.
+However, print debugging has its downsides. It can clutter up the code with lots of print statements that you'll later have to clean up. And it doesn't work well for tracing deeper logical issues. Excessive printing can also slow down the program. After all the course is about being computationally efficient.
 
-Here is a some of my code from Freshman year. 😳
+Here is some of my code from Freshman year. 😳
 
 ![PrintDebug](images/PrintDebug.png)
 
@@ -28,21 +28,21 @@ It may feel daunting at first if you've never used a debugger. But once you get 
 
 So don't be afraid to graduate from print debugging and unlock the full potential of your IDE's debugger. Often one can combine it with judiciously placed prints and you'll have a killer debugging duo.
 
-### working with break points
+### Working with breakpoints
 
 Breakpoints are one of the most useful features of debuggers in IDEs like VSCode and PyCharm. They allow you to pause execution at any line of code you specify to inspect the state of the program.
 
 In VSCode, you can set a breakpoint by clicking on the editor margin to the left of the line number you want to break on. A red dot will appear indicating the breakpoint.
 
-![BreakPoint](./VSCodeBreakPoint.png)
+![BreakPoint](images/VsCodeBreakPoint.png)
 
 In PyCharm, click on the gutter to the left of the line number to set a breakpoint.
 
-![BreakPoint](./PyCharmBreakPoint.png)
+![BreakPoint](images/PyCharmBreakPoint.png)
 
 Breakpoints are enabled only during debug mode.
 
-Here is an example of where a breakpoint has been hit during Debug for project 1.
+Here is an example of where a breakpoint has been hit during debugging for project 1.
 
 
 The blue line highlights the current line of execution. 
