@@ -81,7 +81,7 @@ Once execution is paused on a breakpoint, you have several options to step throu
 ### Leveraging the Stack Trace
 Another useful debugging tool provided by IDEs' like VSCode and PyCharm is the stack trace. This gives you visibility into the sequence of function calls that led to the current execution point. Very Very useful for functional programming and recursion.
 
-![Stack Trace](images/StackTrace.png)
+![Stack Trace](images/Exampleofstack.png)
 
 When paused in the debugger, the stack trace shows the chain of functions calls in order from the top-level caller down to the current line of execution. This helps reconstruct how the code reached its current state. functions in the stack can also be selected and paired with peeking you can see when happened before the code jump.
 
@@ -126,8 +126,9 @@ Aman Dhruva Thamminana & CSE 331 Team
 
 in the meanwhile enjoy these :
 
-![Ken](images/DebugKen.png)
 
+<img src="images/DebugKen.png" alt="kachow" width="400"/>
 
-![Kachow](images/Kachow.png)
+<img src="images/Kachow.jpeg" alt="kachow" width="400"/>
+
 
