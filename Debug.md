@@ -96,7 +96,7 @@ This was my personal favorite trick to debug. #LiveSaver.
 Sometimes your code will fail as we have set asserts in our test cases to ensure proper. It might be hard to point what went wrong during the exection. Enabling "user uncaught exceptions" in debug mode will save the day! When turned on, your code will pause execution right before an unhandled exception occurs, rather than crashing. This allows you to inspect the program state and variables leading up to the exception, making it much easier to identify the source of the problem.
 
 
-Debugging is a crucial programming skill that takes time and a lot of patience to master. in my opinion code that compiles on the first try is indistinguibel from magic. But by learing how to use tools at your disposal you can spend time wining about other classes.
+Debugging is a crucial programming skill that takes time and a lot of patience to master. n my opinion code that compiles on the first try is indistinguibel from magic. But by learing how to use tools at your disposal you can spend time wining about other classes.
 
 
 Happy ~~Coding!~~ Debugging!
