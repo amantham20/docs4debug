@@ -13,6 +13,7 @@ Here is some of my code from Freshman year. 😳
 
 ![PrintDebug](images/PrintDebug.png)
 
+
 ## Debugging with a Debugger
 
 While print statements have their place, to take your debugging skills to the next level, it's worth learning how to use a debugger built into your IDE. Debuggers allow you to pause execution, inspect variables, and step through your code line-by-line to understand what's happening.
@@ -110,7 +111,8 @@ Here is an example of an error with peeking of other variables
 
 Regular breakpoints pause execution every time a line is hit. For more control, you can use conditional breakpoints to only break when certain criteria are met. Conditional breakpoints include an expression that is evaluated each time the line is reached. The debugger only pauses if the expression evaluates to true.
 
-![Conditional](images/ConditionalBreakpoint.png)
+<!-- ![Conditional](images/ConditionalBreakpoint.png) -->
+<img src="images/ConditionalBreakpoint.png" alt="kachow" width="600"/>
 
 ---
 Debugging is a crucial programming skill that takes time and a lot of patience to master. But with practice, you'll be able to track down bugs faster and write more robust code. The investment of time pays off greatly in the long run.
