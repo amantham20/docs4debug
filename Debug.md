@@ -46,7 +46,7 @@ Here is an example of where a breakpoint has been hit during debugging for proje
 
 
 The blue line highlights the current line of execution. 
-<!-- show the pycharm image -->
+![BreakPoint](images/BreakPointHitPyCharm.png)
 
 In the lower right we can inspect the variables in the current scope at the breakpoint. [Color] Region
 
@@ -60,6 +60,9 @@ Key tips for inspecting variables:
 Both VSCode and PyCharm provide a handy hover inspection feature that lets you view variable values during debugging without explicitly expanding variables or setting watches.
 
 Simply hover over any variable when paused on a breakpoint to see a popup with the current value.
+
+<!-- Image for Hovering inspection -->
+
 
 ### Navigating Debugged Code
 Once execution is paused on a breakpoint, you have several options to step through code and analyze the flow:
@@ -82,12 +85,37 @@ Once execution is paused on a breakpoint, you have several options to step throu
 ### Leveraging the Stack Trace
 Another useful debugging tool provided by IDEs' like VSCode and PyCharm is the stack trace. This gives you visibility into the sequence of function calls that led to the current execution point. Verry Very useful for functional programming and recursion.
 
-<!-- ## [Recursion](#recursion). -->
+<!-- Recursion Example -->
 
 When paused in the debugger, the stack trace shows the chain of functions calls in order from the top level caller down to the current line of execution. This helps reconstruct how the code reached its current state.
 
 
-### 
+### oops my testcases fail debuging (user uncaught exceptions).
+This was my personal favorite trick to debug. #LiveSaver.
+
+Sometimes your code will fail as we have set asserts in our test cases to ensure proper. It might be hard to point what went wrong during the exection. Enabling "user uncaught exceptions" in debug mode will save the day! When turned on, your code will pause execution right before an unhandled exception occurs, rather than crashing. This allows you to inspect the program state and variables leading up to the exception, making it much easier to identify the source of the problem.
+
+
+Debugging is a crucial programming skill that takes time and a lot of patience to master. in my opinion code that compiles on the first try is indistinguibel from magic. But by learing how to use tools at your disposal you can spend time wining about other classes.
+
+
+Happy ~~Coding!~~ Debugging!
+
+Aman Dhruva Thamminana & CSE 331 Team
+
+
+in the meantime
+
+![Ken](images/DebugKen.png)
+
+
+
+
+
+
+
+
+
 
 
 
