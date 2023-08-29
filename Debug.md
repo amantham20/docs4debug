@@ -106,6 +106,12 @@ Here is an example of an error with peeking of other variables
 ![ExampleUncaught](images/uncaughtException.png)
 
 
+### Using Conditional Breakpoints
+
+Regular breakpoints pause execution every time a line is hit. For more control, you can use conditional breakpoints to only break when certain criteria are met. Conditional breakpoints include an expression that is evaluated each time the line is reached. The debugger only pauses if the expression evaluates to true.
+
+![Conditional](images/ConditionalBreakpoint.png)
+
 ---
 Debugging is a crucial programming skill that takes time and a lot of patience to master. But with practice, you'll be able to track down bugs faster and write more robust code. The investment of time pays off greatly in the long run.
 
@@ -124,36 +130,4 @@ in the meanwhile enjoy these :
 
 
 ![Kachow](images/Kachow.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
