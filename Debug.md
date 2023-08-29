@@ -34,11 +34,11 @@ Breakpoints are one of the most useful features of debuggers in IDEs like VSCode
 
 In VSCode, you can set a breakpoint by clicking on the editor margin to the left of the line number you want to break on. A red dot will appear indicating the breakpoint.
 
-![BreakPoint](images/VsCodeBreakPoint.png)
+![BreakPoint](images/VsCodeBreakpoint.png)
 
 In PyCharm, click on the gutter to the left of the line number to set a breakpoint.
 
-![BreakPoint](images/PyCharmBreakPoint.png)
+![BreakPoint](images/PyCharmBreakpoint.png)
 
 Breakpoints are enabled only during debug mode.
 
