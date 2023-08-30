@@ -97,7 +97,7 @@ When paused in the debugger, the stack trace shows the chain of functions calls 
 ### Oops my test cases failed during debugging (user uncaught exceptions).
 This was my personal favorite trick to debug with.
 
-Sometimes your code will fail as we have set asserts in our test cases to enurse that projects are properly coded to base and edge cases. It might be hard to point what went wrong during the execution. Enabling "user uncaught exceptions" in debug mode will save the day! When turned on, your code will pause execution right before an unhandled exception occurs, rather than crashing. This allows you to inspect the program state and variables leading up to the exception, making it much easier to identify the source of the problem.
+Sometimes your code will fail as we have set asserts in our test cases to ensure that projects are properly coded to base and edge cases or it could be that a variable was set to `none` where it shouldn't have been. It might be hard to point out what went wrong during the execution. Enabling "user uncaught exceptions" in debug mode will save the day! When turned on, your code will pause execution right before an unhandled exception occurs, rather than crashing. This allows you to inspect the program state and variables leading up to the exception, making it much easier to identify the source of the problem.
 
 
 Here is how you can enable it in VSCode and PyCharm:
