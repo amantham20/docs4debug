@@ -11,7 +11,9 @@ However, print debugging has its downsides. It can clutter up the code with lots
 Here is some of my code from Freshman year. 😳
 (not a good practice)
 
-![PrintDebug](images/PrintDebug.png)
+![PrintDebug](https://github.com/amantham20/docs4debug/blob/main/images/PrintDebug.png?raw=true)
+
+
 
 
 ## Debugging with a Debugger
@@ -25,7 +27,7 @@ Many IDEs like Visual Studio, and PyCharm have excellent debugging support. It's
 * Stepping over, into, or out of functions as you walk through code
 * Viewing the call stack to understand the execution path
 
-![Debugger](images/LabeledDebugger.jpeg)
+![Debugger](https://github.com/amantham20/docs4debug/blob/main/images/LabeledDebugger.jpeg?raw=true)
 
 It may feel daunting at first if you've never used a debugger. But once you get the hang of it, you'll have way more visibility into your code and can zero in on problems much faster than with print statements alone. 
 
@@ -37,12 +39,12 @@ Breakpoints are one of the most useful features of debuggers in IDEs like VSCode
 In VSCode, you can set a breakpoint by clicking on the editor margin to the left of the line number you want to break on. A red dot will appear indicating the breakpoint.
 
 <!-- ![BreakPoint](images/VsCodeBreakpoint.png) -->
-<img src="images/VsCodeBreakpoint.png" alt="VsCodeBreakpoint" width="600"/>
+<img src="https://github.com/amantham20/docs4debug/blob/main/images/VsCodeBreakpoint.png?raw=true" alt="VsCodeBreakpoint" width="600"/>
 
 In PyCharm, click on the line number to set a breakpoint. Similar to VSCode, a red dot will appear indicating the breakpoint.
 
 <!-- ![BreakPoint](images/PyCharmBreakpoint.png) -->
-<img src="images/PyCharmBreakpoint.png" alt="PyCharmBreakpoint" width="600"/>
+<img src="https://github.com/amantham20/docs4debug/blob/main/images/PyCharmBreakpoint.png?raw=true" alt="PyCharmBreakpoint" width="600"/>
 
 
 Breakpoints are enabled only during debug mode.
@@ -51,7 +53,7 @@ Here is an example of where a breakpoint has been hit during debugging for proje
 
 The blue line highlights the current line of execution. 
 <!-- ![BreakPoint](images/BreakPointHitPyCharm.png) -->
-<img src="images/BreakPointHitPyCharm.png" alt="BreakPointHitPyCharm" width="600"/>
+<img src="https://github.com/amantham20/docs4debug/blob/main/images/BreakPointHitPyCharm.png?raw=true" alt="BreakPointHitPyCharm" width="600"/>
 
 
 In the lower right, we can inspect the variables in the current scope at the breakpoint. For advanced classes and Data Structures the can be peeked in.
@@ -68,14 +70,14 @@ Both VSCode and PyCharm provide a handy hover inspection feature that lets you v
 Simply hover over any variable when paused on a breakpoint to see a popup with the current value.
 
 <!-- ![Hover](images/HoverInspection.png) -->
-<img src="images/HoverInspection.png" alt="HoverInspection" width="600"/>
+<img src="https://github.com/amantham20/docs4debug/blob/main/images/HoverInspection.png?raw=true" alt="HoverInspection" width="600"/>
 
 
 ### Navigating Debugged Code
 Once execution is paused on a breakpoint, you have several options to step through code and analyze the flow:
 
 <!-- ![Navigation](images/LabeledNavigation.jpeg) -->
-<img src="images/LabeledNavigation.jpeg" alt="LabeledNavigation" width="600"/>
+<img src="https://github.com/amantham20/docs4debug/blob/main/images/LabeledNavigation.jpeg?raw=true" alt="LabeledNavigation" width="600"/>
 
 * Resume - Resumes full execution until the next breakpoint. Useful to fast forward past uninteresting sections.
 * Step Over - Steps to the next line, but does not enter any functions called on that line. Steps over code without digging into it.
@@ -88,7 +90,7 @@ Once execution is paused on a breakpoint, you have several options to step throu
 Another useful debugging tool provided by IDEs' like VSCode and PyCharm is the stack trace. This gives you visibility into the sequence of function calls that led to the current execution point. Very Very useful for functional programming and recursion.
 
 <!-- ![Stack Trace](images/Exampleofstack.png) -->
-<img src="images/Exampleofstack.png" alt="Exampleofstack" width="600"/>
+<img src="https://github.com/amantham20/docs4debug/blob/main/images/Exampleofstack.png?raw=true" alt="Exampleofstack" width="600"/>
 
 
 When paused in the debugger, the stack trace shows the chain of functions calls in order from the top-level caller down to the current line of execution. This helps reconstruct how the code reached its current state. functions in the stack can also be selected and paired with peeking you can see when happened before the code jump.
@@ -105,16 +107,16 @@ Here is how you can enable it in VSCode and PyCharm:
 
 For vscode it is a enabled by checking the box in the debug tab called `user uncaught exception`.
 <!-- ![Uncaught](images/vscodeUncaughtExceptions.png) -->
-<img src="images/vscodeUncaughtExceptions.png" alt="vscodeUncaughtExceptions" width="600"/>
+<img src="https://github.com/amantham20/docs4debug/blob/main/images/vscodeUncaughtExceptions.png?raw=true" alt="vscodeUncaughtExceptions" width="600"/>
 
 For PyCharm use `shift + ctrl/⌘ + F8` and set the permission to the following settings.
 <!-- ![Uncaught](images/BreakpointAnyExceptionSettings.png) -->
-<img src="images/BreakpointAnyExceptionSettings.png" alt="BreakpointAnyExceptionSettings" width="600"/>
+<img src="https://github.com/amantham20/docs4debug/blob/main/images/BreakpointAnyExceptionSettings.png?raw=true" alt="BreakpointAnyExceptionSettings" width="600"/>
 
 
 Here is an example of an error with peeking of other variables
 <!-- ![ExampleUncaught](images/uncaughtException.png) -->
-<img src="images/uncaughtException.png" alt="uncaughtException" width="600"/>
+<img src="https://github.com/amantham20/docs4debug/blob/main/images/uncaughtException.png?raw=true" alt="uncaughtException" width="600"/>
 
 
 ### Using Conditional Breakpoints
@@ -122,7 +124,7 @@ Here is an example of an error with peeking of other variables
 Regular breakpoints pause execution every time a line is hit. For more control, you can use conditional breakpoints to only break when certain criteria are met. Conditional breakpoints include an expression that is evaluated each time the line is reached. The debugger only pauses if the expression evaluates to true.
 
 <!-- ![Conditional](images/ConditionalBreakpoint.png) -->
-<img src="images/ConditionalBreakpoint.png" alt="ConditionalBreakpoint" width="600"/>
+<img src="https://github.com/amantham20/docs4debug/blob/main/images/ConditionalBreakpoint.png?raw=true" alt="ConditionalBreakpoint" width="600"/>
 
 ---
 Debugging is a crucial programming skill that takes time and a lot of patience to master. But with practice, you'll be able to track down bugs faster and write more robust code. The investment of time pays off greatly in the long run.
@@ -139,8 +141,8 @@ Aman Dhruva Thamminana & CSE 331 Team
 in the meanwhile enjoy these :
 
 
-<img src="images/DebugKen.png" alt="kachow" width="400"/>
+<img src="https://github.com/amantham20/docs4debug/blob/main/images/DebugKen.png?raw=true" alt="kachow" width="400"/>
 
-<img src="images/Kachow.jpeg" alt="kachow" width="400"/>
+<img src="https://github.com/amantham20/docs4debug/blob/main/images/Kachow.jpeg?raw=true" alt="kachow" width="400"/>
 
 
